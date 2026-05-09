@@ -3,17 +3,17 @@ import React from "react";
 function App() {
   const services = [
     {
-      title: "Window Cleaning",
-      image:
-        "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop",
+      title: "Live Band and Music",
+      image: "/YlpmisBand.jpeg",
       desc:
-        "Professional sparkling window cleaning for homes and businesses.",
+        "Set the mood with live music from Ylpmis Band and keep the energy flowing throughout the event.",
       link: "#",
     },
 
     {
-      title: "Live Band and Music",
-      image: "/YlpmisBand.jpeg",
+      title: "Laundry Services",
+      image:
+        "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=1200&auto=format&fit=crop",
       desc:
         "Fast, clean, and affordable laundry services.",
       link: "#",
