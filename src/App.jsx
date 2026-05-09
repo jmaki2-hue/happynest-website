@@ -352,7 +352,7 @@ function App() {
             <p>📞 +63 936 926 0413</p>
 
             <p className="break-all">
-              ✉️ Eventsbyluna@gmail.com
+              ✉️ eventsbyluna@gmail.com
             </p>
 
           </div>
