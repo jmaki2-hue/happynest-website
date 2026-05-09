@@ -15,7 +15,7 @@ function App() {
 
     {
       id: "beads",
-      title: "Beads Souvenir Making",
+      title: "Bead Me Up!",
       image: "/Bead me up.jpg",
       desc:
         "Customized handmade bead souvenirs perfect for birthdays, weddings, baby showers, and special occasions.",
