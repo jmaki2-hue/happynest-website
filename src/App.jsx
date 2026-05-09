@@ -5,7 +5,7 @@ function App() {
   const services = [
     {
       title: "Live Band and Music",
-      image: "/YlpmisBand.jpeg",
+      image: "/YlpmisBand.jpg",
       desc:
         "Set the mood with live music from Ylpmis Band and keep the energy flowing throughout the event.",
       link: "#",
