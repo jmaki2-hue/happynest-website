@@ -1,5 +1,5 @@
 import React from "react";
-//(Update with "git add .", "git commit -m 'added animated nature background'", "git push")//
+//(Update with "git add .", "git commit -m 'updated local background image'", "git push")//
 
 function App() {
 
@@ -14,12 +14,11 @@ function App() {
     },
 
     {
-      id: "laundry",
-      title: "Laundry Services",
-      image:
-        "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=1200&auto=format&fit=crop",
+      id: "beads",
+      title: "Beads Souvenir Making",
+      image: "/Bead me up.jpg",
       desc:
-        "Fast, clean, and affordable laundry services.",
+        "Customized handmade bead souvenirs perfect for birthdays, weddings, baby showers, and special occasions.",
       link: "#",
     },
 
@@ -33,6 +32,26 @@ function App() {
     },
 
     {
+      id: "mojito",
+      title: "Mobile Frozen Mojito Bar",
+      image:
+        "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1200&auto=format&fit=crop",
+      desc:
+        "Refreshing mobile frozen mojitos, coolers, and party drinks served live for events and gatherings.",
+      link: "#",
+    },
+
+    {
+      id: "laundry",
+      title: "Laundry Services",
+      image:
+        "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=1200&auto=format&fit=crop",
+      desc:
+        "Fast, clean, and affordable laundry services.",
+      link: "#",
+    },
+
+    {
       id: "outings",
       title: "Outings & Resort",
       image:
@@ -42,24 +61,6 @@ function App() {
       link: "#",
     },
 
-    {
-      id: "beads",
-      title: "Beads Souvenir Making",
-      image: "/Bead me up.jpg",
-      desc:
-        "Customized handmade bead souvenirs perfect for birthdays, weddings, baby showers, and special occasions.",
-      link: "#",
-    },
-
-    {
-      id: "mojito",
-      title: "Mobile Frozen Mojito Bar",
-      image:
-        "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1200&auto=format&fit=crop",
-      desc:
-        "Refreshing mobile frozen mojitos, coolers, and party drinks served live for events and gatherings.",
-      link: "#",
-    },
   ];
 
   return (
@@ -68,39 +69,30 @@ function App() {
       className="relative min-h-screen overflow-x-hidden text-gray-800"
     >
 
-      {/* FULL PAGE BACKGROUND VIDEO */}
-      <div className="fixed inset-0 -z-20 overflow-hidden">
-
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover"
-        >
-          <source
-            src="https://cdn.coverr.co/videos/coverr-river-in-the-forest-1560678593216?download=1080p"
-            type="video/mp4"
-          />
-        </video>
-
-      </div>
+      {/* FULL PAGE BACKGROUND IMAGE */}
+      <div
+        className="fixed inset-0 -z-20 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/Foodie.jpg')",
+        }}
+      ></div>
 
       {/* DARK OVERLAY */}
-      <div className="fixed inset-0 bg-black/40 -z-10"></div>
+      <div className="fixed inset-0 bg-black/45 -z-10"></div>
 
-      {/* FALLING SAKURA LEAVES EFFECT */}
+      {/* FLOATING SAKURA EFFECT */}
       <div className="pointer-events-none fixed inset-0 overflow-hidden z-0">
 
-        {[...Array(20)].map((_, i) => (
+        {[...Array(25)].map((_, i) => (
           <div
             key={i}
-            className="absolute text-pink-200 opacity-70 animate-bounce"
+            className="absolute animate-pulse"
             style={{
               left: `${Math.random() * 100}%`,
-              top: `${Math.random() * -100}%`,
-              animationDuration: `${5 + Math.random() * 10}s`,
-              fontSize: `${15 + Math.random() * 25}px`,
+              top: `${Math.random() * 100}%`,
+              fontSize: `${10 + Math.random() * 20}px`,
+              animationDuration: `${3 + Math.random() * 5}s`,
+              opacity: 0.7,
             }}
           >
             🌸
@@ -117,7 +109,7 @@ function App() {
 
           <a
             href="#top"
-            className="text-2xl md:text-3xl font-bold text-slate-700 hover:text-blue-500 transition"
+            className="text-2xl md:text-3xl font-bold text-slate-700 hover:text-pink-500 transition"
           >
             Events by Luna
           </a>
@@ -196,9 +188,7 @@ function App() {
         <div className="bg-white/15 backdrop-blur-md rounded-3xl p-10 md:p-16 max-w-5xl mx-auto border border-white/20 shadow-2xl">
 
           <h1 className="text-4xl md:text-7xl font-bold text-white mb-6 leading-tight">
-
             Events by Luna
-
           </h1>
 
           <p className="text-lg md:text-2xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
