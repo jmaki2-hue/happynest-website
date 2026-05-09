@@ -1,5 +1,5 @@
 import React from "react";
-//(Update with "git add .", "git commit -m 'updated Events by Luna branding'", "git push")//
+//(Update with "git add .", "git commit -m 'added animated nature background'", "git push")//
 
 function App() {
 
@@ -14,11 +14,12 @@ function App() {
     },
 
     {
-      id: "beads",
-      title: "Beads Souvenir Making",
-      image: "/Bead me up.jpg",
+      id: "laundry",
+      title: "Laundry Services",
+      image:
+        "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=1200&auto=format&fit=crop",
       desc:
-        "Customized handmade bead souvenirs perfect for birthdays, weddings, baby showers, and special occasions.",
+        "Fast, clean, and affordable laundry services.",
       link: "#",
     },
 
@@ -28,16 +29,6 @@ function App() {
       image: "/Lolas.jpg",
       desc:
         "Beautiful venue for birthdays, weddings, and celebrations.",
-      link: "#",
-    },
-
-    {
-      id: "mojito",
-      title: "Mobile Frozen Mojito Bar",
-      image:
-        "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1200&auto=format&fit=crop",
-      desc:
-        "Refreshing mobile frozen mojitos, coolers, and party drinks served live for events and gatherings.",
       link: "#",
     },
 
@@ -52,12 +43,21 @@ function App() {
     },
 
     {
-      id: "laundry",
-      title: "Laundry Services",
-      image:
-        "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=1200&auto=format&fit=crop",
+      id: "beads",
+      title: "Beads Souvenir Making",
+      image: "/Bead me up.jpg",
       desc:
-        "Fast, clean, and affordable laundry services.",
+        "Customized handmade bead souvenirs perfect for birthdays, weddings, baby showers, and special occasions.",
+      link: "#",
+    },
+
+    {
+      id: "mojito",
+      title: "Mobile Frozen Mojito Bar",
+      image:
+        "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1200&auto=format&fit=crop",
+      desc:
+        "Refreshing mobile frozen mojitos, coolers, and party drinks served live for events and gatherings.",
       link: "#",
     },
   ];
@@ -65,11 +65,52 @@ function App() {
   return (
     <div
       id="top"
-      className="min-h-screen overflow-x-hidden bg-[#edf1f4] text-gray-800"
+      className="relative min-h-screen overflow-x-hidden text-gray-800"
     >
 
+      {/* FULL PAGE BACKGROUND VIDEO */}
+      <div className="fixed inset-0 -z-20 overflow-hidden">
+
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source
+            src="https://cdn.coverr.co/videos/coverr-river-in-the-forest-1560678593216?download=1080p"
+            type="video/mp4"
+          />
+        </video>
+
+      </div>
+
+      {/* DARK OVERLAY */}
+      <div className="fixed inset-0 bg-black/40 -z-10"></div>
+
+      {/* FALLING SAKURA LEAVES EFFECT */}
+      <div className="pointer-events-none fixed inset-0 overflow-hidden z-0">
+
+        {[...Array(20)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute text-pink-200 opacity-70 animate-bounce"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * -100}%`,
+              animationDuration: `${5 + Math.random() * 10}s`,
+              fontSize: `${15 + Math.random() * 25}px`,
+            }}
+          >
+            🌸
+          </div>
+        ))}
+
+      </div>
+
       {/* NAVBAR */}
-      <nav className="bg-white shadow-md px-4 md:px-10 py-5 flex justify-between items-center sticky top-0 z-50">
+      <nav className="bg-white/80 backdrop-blur-md shadow-md px-4 md:px-10 py-5 flex justify-between items-center sticky top-0 z-50">
 
         {/* LOGO + DROPDOWN */}
         <div className="relative group">
@@ -131,17 +172,17 @@ function App() {
         </div>
 
         {/* NAV LINKS */}
-        <div className="flex gap-3 md:gap-6 text-sm md:text-base text-gray-600 font-medium">
+        <div className="flex gap-3 md:gap-6 text-sm md:text-base text-white font-medium">
 
-          <a href="#services" className="hover:text-blue-500 transition">
+          <a href="#services" className="hover:text-pink-200 transition">
             Services
           </a>
 
-          <a href="#videos" className="hover:text-blue-500 transition">
+          <a href="#videos" className="hover:text-pink-200 transition">
             Clips
           </a>
 
-          <a href="#contact" className="hover:text-blue-500 transition">
+          <a href="#contact" className="hover:text-pink-200 transition">
             Contact
           </a>
 
@@ -150,31 +191,39 @@ function App() {
       </nav>
 
       {/* HERO SECTION */}
-      <section className="text-center py-20 md:py-24 px-6 bg-gradient-to-r from-slate-100 to-blue-50">
+      <section className="relative text-center py-20 md:py-32 px-6">
 
-        <h1 className="text-4xl md:text-6xl font-bold text-slate-700 mb-6 leading-tight">
-          Events by Luna
-        </h1>
+        <div className="bg-white/15 backdrop-blur-md rounded-3xl p-10 md:p-16 max-w-5xl mx-auto border border-white/20 shadow-2xl">
 
-        <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-          Clean spaces, unforgettable celebrations, and relaxing experiences all in one modern family-friendly destination.
-        </p>
+          <h1 className="text-4xl md:text-7xl font-bold text-white mb-6 leading-tight">
 
-        <a href="#services">
-          <button className="mt-10 bg-slate-700 hover:bg-slate-800 text-white px-8 py-4 rounded-full text-lg shadow-lg transition hover:scale-105">
-            Explore Services
-          </button>
-        </a>
+            Events by Luna
+
+          </h1>
+
+          <p className="text-lg md:text-2xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
+            Elegant celebrations, unforgettable moments, and premium services wrapped in nature-inspired beauty.
+          </p>
+
+          <a href="#services">
+
+            <button className="mt-10 bg-pink-400 hover:bg-pink-500 text-white px-8 py-4 rounded-full text-lg shadow-lg transition hover:scale-105">
+              Explore Services
+            </button>
+
+          </a>
+
+        </div>
 
       </section>
 
       {/* SERVICES SECTION */}
       <section
         id="services"
-        className="py-20 px-4 md:px-8 max-w-7xl mx-auto"
+        className="relative py-20 px-4 md:px-8 max-w-7xl mx-auto z-10"
       >
 
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-slate-700 mb-16">
+        <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-16">
           Our Services
         </h2>
 
@@ -185,7 +234,7 @@ function App() {
               id={service.id}
               key={index}
               href={service.link}
-              className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-2"
+              className="bg-white/90 backdrop-blur-md rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-2"
             >
 
               <img
@@ -220,17 +269,17 @@ function App() {
       {/* VIDEO CLIPS */}
       <section
         id="videos"
-        className="py-20 px-4 md:px-8 bg-slate-100"
+        className="relative py-20 px-4 md:px-8"
       >
 
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-slate-700 mb-16">
+        <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-16">
           Featured Clips
         </h2>
 
         <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
 
           {/* VIDEO 1 */}
-          <div className="bg-white rounded-3xl overflow-hidden shadow-lg">
+          <div className="bg-white/90 backdrop-blur-md rounded-3xl overflow-hidden shadow-lg">
 
             <video
               controls
@@ -255,7 +304,7 @@ function App() {
           </div>
 
           {/* VIDEO 2 */}
-          <div className="bg-white rounded-3xl overflow-hidden shadow-lg">
+          <div className="bg-white/90 backdrop-blur-md rounded-3xl overflow-hidden shadow-lg">
 
             <video
               controls
@@ -286,42 +335,46 @@ function App() {
       {/* CONTACT SECTION */}
       <section
         id="contact"
-        className="py-24 px-4 md:px-8 text-center"
+        className="relative py-24 px-4 md:px-8 text-center"
       >
 
-        <h2 className="text-4xl md:text-5xl font-bold text-slate-700 mb-10">
-          Book With Us
-        </h2>
+        <div className="bg-white/15 backdrop-blur-md rounded-3xl p-10 max-w-4xl mx-auto border border-white/20 shadow-2xl">
 
-        <p className="text-lg md:text-xl text-gray-600 mb-10">
-          Ready to schedule your service or reserve your venue?
-        </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-10">
+            Book With Us
+          </h2>
 
-        <a
-          href="mailto:jmakinano.arthur@gmail.com"
-          className="bg-slate-700 hover:bg-slate-800 text-white px-8 md:px-10 py-4 md:py-5 rounded-full text-lg md:text-xl transition shadow-lg inline-block"
-        >
-          Book Through Email
-        </a>
-
-        <div className="mt-16 text-gray-600 space-y-4 text-base md:text-lg">
-
-          <p>📍 Trece Martirez, Cavite</p>
-
-          <p>📞 +63 936 926 0413</p>
-
-          <p className="break-all">
-            ✉️ jmakinano.arthur@gmail.com
+          <p className="text-lg md:text-xl text-gray-100 mb-10">
+            Ready to schedule your service or reserve your venue?
           </p>
+
+          <a
+            href="mailto:jmakinano.arthur@gmail.com"
+            className="bg-pink-400 hover:bg-pink-500 text-white px-8 md:px-10 py-4 md:py-5 rounded-full text-lg md:text-xl transition shadow-lg inline-block"
+          >
+            Book Through Email
+          </a>
+
+          <div className="mt-16 text-gray-100 space-y-4 text-base md:text-lg">
+
+            <p>📍 Trece Martirez, Cavite</p>
+
+            <p>📞 +63 936 926 0413</p>
+
+            <p className="break-all">
+              ✉️ jmakinano.arthur@gmail.com
+            </p>
+
+          </div>
 
         </div>
 
       </section>
 
       {/* FOOTER COPYRIGHT */}
-      <footer className="bg-white border-t border-gray-200 py-6 mt-10">
+      <footer className="relative bg-black/40 backdrop-blur-md border-t border-white/10 py-6 mt-10">
 
-        <div className="text-center text-gray-500 text-xs md:text-sm space-y-3 px-4">
+        <div className="text-center text-gray-200 text-xs md:text-sm space-y-3 px-4">
 
           <p>
             © 2026 Events by Luna. All Rights Reserved.
@@ -336,7 +389,7 @@ function App() {
             href="https://www.facebook.com/profile.php?id=61554403796437&mibextid=wwXIfr&rdid=ijyLTLQ1rcBEcv7C#"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block text-blue-600 hover:text-blue-800 transition font-medium"
+            className="inline-block text-pink-200 hover:text-pink-400 transition font-medium"
           >
             Visit Our Facebook Page
           </a>
