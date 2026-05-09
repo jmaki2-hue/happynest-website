@@ -14,21 +14,30 @@ function App() {
     },
 
     {
-      id: "laundry",
-      title: "Laundry Services",
-      image:
-        "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=1200&auto=format&fit=crop",
-      desc:
-        "Fast, clean, and affordable laundry services.",
-      link: "#",
-    },
-
-    {
       id: "events",
       title: "Events Venue",
       image: "/Lolas.jpg",
       desc:
         "Beautiful venue for birthdays, weddings, and celebrations.",
+      link: "#",
+    },
+
+    {
+      id: "beads",
+      title: "Bead Me Up!",
+      image: "/Bead me up.jpg",
+      desc:
+        "Customized handmade bead souvenirs perfect for birthdays, weddings, baby showers, and special occasions.",
+      link: "#",
+    },
+
+    {
+      id: "mojito",
+      title: "Mobile Frozen Mojito Bar",
+      image:
+        "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1200&auto=format&fit=crop",
+      desc:
+        "Refreshing mobile frozen mojitos, coolers, and party drinks served live for events and gatherings.",
       link: "#",
     },
 
@@ -43,21 +52,12 @@ function App() {
     },
 
     {
-      id: "beads",
-      title: "Beads Souvenir Making",
-      image: "/Bead me up.jpg",
-      desc:
-        "Customized handmade bead souvenirs perfect for birthdays, weddings, baby showers, and special occasions.",
-      link: "#",
-    },
-
-    {
-      id: "mojito",
-      title: "Mobile Frozen Mojito Bar",
+      id: "laundry",
+      title: "Laundry Services",
       image:
-        "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=1200&auto=format&fit=crop",
       desc:
-        "Refreshing mobile frozen mojitos, coolers, and party drinks served live for events and gatherings.",
+        "Fast, clean, and affordable laundry services.",
       link: "#",
     },
   ];
