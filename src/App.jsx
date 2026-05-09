@@ -1,5 +1,5 @@
 import React from "react";
-//(Update with "git add .", "git commit -m 'updated mobile responsive design'", "git push")//
+//(Update with "git add .", "git commit -m 'updated Events by Luna branding'", "git push")//
 
 function App() {
 
@@ -14,11 +14,12 @@ function App() {
     },
 
     {
-      id: "beads",
-      title: "Bead Me Up!",
-      image: "/Bead me up.jpg",
+      id: "laundry",
+      title: "Laundry Services",
+      image:
+        "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=1200&auto=format&fit=crop",
       desc:
-        "Customized handmade bead souvenirs perfect for birthdays, weddings, baby showers, and special occasions.",
+        "Fast, clean, and affordable laundry services.",
       link: "#",
     },
 
@@ -28,16 +29,6 @@ function App() {
       image: "/Lolas.jpg",
       desc:
         "Beautiful venue for birthdays, weddings, and celebrations.",
-      link: "#",
-    },
-
-    {
-      id: "mojito",
-      title: "Mobile Frozen Mojito Bar",
-      image:
-        "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1200&auto=format&fit=crop",
-      desc:
-        "Refreshing mobile frozen mojitos, coolers, and party drinks served live for events and gatherings.",
       link: "#",
     },
 
@@ -52,12 +43,21 @@ function App() {
     },
 
     {
-      id: "laundry",
-      title: "Laundry Services",
-      image:
-        "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=1200&auto=format&fit=crop",
+      id: "beads",
+      title: "Beads Souvenir Making",
+      image: "/Bead me up.jpg",
       desc:
-        "Fast, clean, and affordable laundry services.",
+        "Customized handmade bead souvenirs perfect for birthdays, weddings, baby showers, and special occasions.",
+      link: "#",
+    },
+
+    {
+      id: "mojito",
+      title: "Mobile Frozen Mojito Bar",
+      image:
+        "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1200&auto=format&fit=crop",
+      desc:
+        "Refreshing mobile frozen mojitos, coolers, and party drinks served live for events and gatherings.",
       link: "#",
     },
   ];
@@ -78,7 +78,7 @@ function App() {
             href="#top"
             className="text-2xl md:text-3xl font-bold text-slate-700 hover:text-blue-500 transition"
           >
-            HappyNest
+            Events by Luna
           </a>
 
           {/* DROPDOWN MENU */}
@@ -153,7 +153,7 @@ function App() {
       <section className="text-center py-20 md:py-24 px-6 bg-gradient-to-r from-slate-100 to-blue-50">
 
         <h1 className="text-4xl md:text-6xl font-bold text-slate-700 mb-6 leading-tight">
-          HappyNest Services & Events
+          Events by Luna
         </h1>
 
         <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -321,15 +321,25 @@ function App() {
       {/* FOOTER COPYRIGHT */}
       <footer className="bg-white border-t border-gray-200 py-6 mt-10">
 
-        <div className="text-center text-gray-500 text-xs md:text-sm space-y-2 px-4">
+        <div className="text-center text-gray-500 text-xs md:text-sm space-y-3 px-4">
 
           <p>
-            © 2026 HappyNest Services & Events. All Rights Reserved.
+            © 2026 Events by Luna. All Rights Reserved.
           </p>
 
           <p>
-            Designed & Developed by HappyNest Web Team
+            Designed & Developed by Events by Luna
           </p>
+
+          {/* FACEBOOK LINK */}
+          <a
+            href="https://www.facebook.com/profile.php?id=61554403796437&mibextid=wwXIfr&rdid=ijyLTLQ1rcBEcv7C#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-blue-600 hover:text-blue-800 transition font-medium"
+          >
+            Visit Our Facebook Page
+          </a>
 
         </div>
 
