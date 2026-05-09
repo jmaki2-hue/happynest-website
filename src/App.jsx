@@ -1,17 +1,20 @@
 import React from "react";
-//(Update with "git add .", "git commit -m "updated website design"", "git push")//
+//(Update with "git add .", "git commit -m 'updated website design'", "git push")//
 
 function App() {
+
   const services = [
     {
+      id: "liveband",
       title: "Live Band and Music",
       image: "/Ylpmis.jpg",
       desc:
         "Set the mood with live music from Ylpmis Band and keep the energy flowing throughout the event.",
-  link: "#",
+      link: "#",
     },
 
     {
+      id: "laundry",
       title: "Laundry Services",
       image:
         "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=1200&auto=format&fit=crop",
@@ -21,14 +24,16 @@ function App() {
     },
 
     {
+      id: "events",
       title: "Events Venue",
-      image: "Lolas.jpg",
+      image: "/Lolas.jpg",
       desc:
         "Beautiful venue for birthdays, weddings, and celebrations.",
       link: "#",
     },
 
     {
+      id: "outings",
       title: "Outings & Resort",
       image:
         "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
@@ -38,15 +43,16 @@ function App() {
     },
 
     {
+      id: "beads",
       title: "Beads Souvenir Making",
       image: "/Bead me up.jpg",
-      
       desc:
         "Customized handmade bead souvenirs perfect for birthdays, weddings, baby showers, and special occasions.",
-        link: "#",
+      link: "#",
     },
 
     {
+      id: "mojito",
       title: "Mobile Frozen Mojito Bar",
       image:
         "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1200&auto=format&fit=crop",
@@ -57,15 +63,74 @@ function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#edf1f4] text-gray-800">
+    <div
+      id="top"
+      className="min-h-screen bg-[#edf1f4] text-gray-800 scroll-smooth"
+    >
 
       {/* NAVBAR */}
       <nav className="bg-white shadow-md px-10 py-5 flex justify-between items-center sticky top-0 z-50">
 
-        <h1 className="text-3xl font-bold text-slate-700">
-          HappyNest
-        </h1>
+        {/* LOGO + DROPDOWN */}
+        <div className="relative group">
 
+          <a
+            href="#top"
+            className="text-3xl font-bold text-slate-700 hover:text-blue-500 transition"
+          >
+            HappyNest
+          </a>
+
+          {/* DROPDOWN MENU */}
+          <div className="absolute left-0 mt-3 w-72 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden">
+
+            <a
+              href="#liveband"
+              className="block px-6 py-4 hover:bg-slate-100 transition"
+            >
+              🎵 Live Band and Music
+            </a>
+
+            <a
+              href="#laundry"
+              className="block px-6 py-4 hover:bg-slate-100 transition"
+            >
+              🧺 Laundry Services
+            </a>
+
+            <a
+              href="#events"
+              className="block px-6 py-4 hover:bg-slate-100 transition"
+            >
+              🎉 Events Venue
+            </a>
+
+            <a
+              href="#outings"
+              className="block px-6 py-4 hover:bg-slate-100 transition"
+            >
+              🌴 Outings & Resort
+            </a>
+
+            <a
+              href="#beads"
+              className="block px-6 py-4 hover:bg-slate-100 transition"
+            >
+              💎 Beads Souvenir Making
+            </a>
+
+            <a
+              href="#mojito"
+              className="block px-6 py-4 hover:bg-slate-100 transition"
+            >
+              🍹 Mobile Frozen Mojito Bar
+            </a>
+
+          </div>
+
+        </div>
+
+        {/* NAV LINKS */}
         <div className="flex gap-6 text-gray-600 font-medium">
 
           <a href="#services" className="hover:text-blue-500 transition">
@@ -95,9 +160,11 @@ function App() {
           Clean spaces, unforgettable celebrations, and relaxing experiences all in one modern family-friendly destination.
         </p>
 
-        <button className="mt-10 bg-slate-700 hover:bg-slate-800 text-white px-8 py-4 rounded-full text-lg shadow-lg transition hover:scale-105">
-          Explore Services
-        </button>
+        <a href="#services">
+          <button className="mt-10 bg-slate-700 hover:bg-slate-800 text-white px-8 py-4 rounded-full text-lg shadow-lg transition hover:scale-105">
+            Explore Services
+          </button>
+        </a>
 
       </section>
 
@@ -115,6 +182,7 @@ function App() {
 
           {services.map((service, index) => (
             <a
+              id={service.id}
               key={index}
               href={service.link}
               className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-2"
