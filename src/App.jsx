@@ -10,7 +10,7 @@ function App() {
       image: "/Ylpmis.jpg",
       desc:
         "Set the mood with live music from Ylpmis Band and keep the energy flowing throughout the event.",
-      link: "#",
+      link: "https://www.facebook.com/profile.php?id=61554466520103",
     },
 
     {
