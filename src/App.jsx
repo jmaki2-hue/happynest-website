@@ -32,22 +32,22 @@ function App() {
     },
 
     {
+      id: "Pictorial Services",
+      title: "Pictorial Services",
+      image:
+        "https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=900&auto=format&fit=crop",
+      desc:
+        "Turning ordinary moments into extraordinary, lasting cinematic experiences.",
+      link: "#",
+    },
+
+    {
       id: "mojito",
       title: "Mobile Frozen Mojito Bar",
       image:
         "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1200&auto=format&fit=crop",
       desc:
         "Refreshing mobile frozen mojitos, coolers, and party drinks served live for events and gatherings.",
-      link: "#",
-    },
-
-    {
-      id: "laundry",
-      title: "Laundry Services",
-      image:
-        "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=1200&auto=format&fit=crop",
-      desc:
-        "Fast, clean, and affordable laundry services.",
       link: "#",
     },
 
@@ -128,7 +128,7 @@ function App() {
               href="#laundry"
               className="block px-6 py-4 hover:bg-slate-100 transition"
             >
-              🧺 Laundry Services
+              🧺 Pictorial Services
             </a>
 
             <a
