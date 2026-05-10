@@ -379,7 +379,7 @@ function App() {
             href="https://www.facebook.com/profile.php?id=61554403796437&mibextid=wwXIfr&rdid=ijyLTLQ1rcBEcv7C#"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block text-pink-200 hover:text-pink-400 transition font-medium"
+            className="inline-block text-pink-200 hover:text-pink-400 transition font-large"
           >
             Visit Our Facebook Page
           </a>
