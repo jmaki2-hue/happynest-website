@@ -364,7 +364,7 @@ function App() {
       {/* FOOTER COPYRIGHT */}
       <footer className="relative bg-black/40 backdrop-blur-md border-t border-white/10 py-6 mt-10">
 
-        <div className="text-center text-gray-200 text-xs md:text-sm space-y-3 px-4">
+        <div className="text-center text-gray-200 text-sm md:text-sm space-y-3 px-4">
 
           <p>
             © 2026 Events by Luna. All Rights Reserved.
