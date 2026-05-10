@@ -367,7 +367,7 @@ function App() {
         <div className="text-center text-gray-200 text-sm md:text-sm space-y-3 px-4">
 
           <p>
-            © 2026 Events by Luna. All Rights Reserved.
+            © 2025 Events by Luna. All Rights Reserved.
           </p>
 
           <p>
