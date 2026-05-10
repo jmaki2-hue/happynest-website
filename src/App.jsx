@@ -339,7 +339,7 @@ function App() {
           </p>
 
           <a
-            href="mailto:jmakinano.arthur@gmail.com"
+            href="mailto:eventsbyluna@gmail.com"
             className="bg-pink-300 hover:bg-pink-400 text-white px-8 md:px-10 py-4 md:py-5 rounded-full text-lg md:text-xl transition shadow-lg inline-block"
           >
             Book Through Email
@@ -352,19 +352,9 @@ function App() {
             <p>📞 +63 936 926 0413</p>
 
             <p className="break-all">
-              
-              <a
-            href="mailto:eventsbyluna@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block text-pink-200 hover:text-pink-400 transition font-large"
-          >
-            <p>
+            
               ✉️ eventsbyluna@gmail.com
             </p>
-          </a>
-          
-              
 
           </div>
 
