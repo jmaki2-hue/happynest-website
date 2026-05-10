@@ -32,7 +32,7 @@ function App() {
     },
 
     {
-      id: "Pictorial Services",
+      id: "Pictorial",
       title: "Pictorial Services",
       image:
         "https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=900&auto=format&fit=crop",
@@ -125,24 +125,10 @@ function App() {
             </a>
 
             <a
-              href="#laundry"
+              href="#Pictorial"
               className="block px-6 py-4 hover:bg-slate-100 transition"
             >
               🧺 Pictorial Services
-            </a>
-
-            <a
-              href="#events"
-              className="block px-6 py-4 hover:bg-slate-100 transition"
-            >
-              🎉 Events Venue
-            </a>
-
-            <a
-              href="#outings"
-              className="block px-6 py-4 hover:bg-slate-100 transition"
-            >
-              🌴 Outings & Resort
             </a>
 
             <a
@@ -153,10 +139,24 @@ function App() {
             </a>
 
             <a
+              href="#events"
+              className="block px-6 py-4 hover:bg-slate-100 transition"
+            >
+              🎉 Events Venue
+            </a>
+
+            <a
               href="#mojito"
               className="block px-6 py-4 hover:bg-slate-100 transition"
             >
               🍹 Mobile Frozen Mojito Bar
+            </a>
+
+            <a
+              href="#outings"
+              className="block px-6 py-4 hover:bg-slate-100 transition"
+            >
+              🌴 Outings & Resort
             </a>
 
           </div>
